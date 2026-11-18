@@ -1,5 +1,5 @@
 // Keeps Blot working with no connection: the whole app is cached on first load.
-const CACHE = 'blot-73ea50f3cd';
+const CACHE = 'blot-6763854345';
 const FILES = ['./', 'index.html', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'icon-maskable.png'];
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))));
 self.addEventListener('activate', e => e.waitUntil(
